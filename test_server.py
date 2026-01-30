@@ -13,9 +13,15 @@ async def health(request):
     return JSONResponse({"status": "ok"})
 
 
+async def hello(request):
+    """Hello endpoint."""
+    return JSONResponse({"message": "hello"})
+
+
 app = Starlette(
     debug=True,
     routes=[
         Route("/api/health", health),
+        Route("/api/hello", hello),
     ],
 )
