@@ -28,6 +28,11 @@ async def greet(request):
     return JSONResponse({"message": "greetings"})
 
 
+async def farewell(request):
+    """Farewell endpoint."""
+    return JSONResponse({"message": "farewell"})
+
+
 app = Starlette(
     debug=True,
     routes=[
@@ -35,5 +40,6 @@ app = Starlette(
         Route("/api/hello", hello),
         Route("/api/goodbye", goodbye),
         Route("/api/greet", greet),
+        Route("/api/farewell", farewell),
     ],
 )
