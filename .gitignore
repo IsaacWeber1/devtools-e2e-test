@@ -1,0 +1,11 @@
+
+# DevTools (auto-generated)
+.port
+.branch
+.system
+.env
+.dev-auth/
+instructions/
+logs/
+__pycache__/
+*.pyc
