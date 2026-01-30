@@ -1,0 +1,8 @@
+Sample task completed successfully.
+
+This file demonstrates that the e2e test agent successfully:
+1. Read the instructions from prompt.md
+2. Processed the "sample-task" instruction
+3. Created this output file as proof of completion
+
+Timestamp: 2026-01-30
